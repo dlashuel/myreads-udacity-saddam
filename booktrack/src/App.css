@@ -1,0 +1,70 @@
+body{
+margin: 0;
+}
+.title {
+  text-align: center;
+  vertical-align: center;
+  background-color:  #1C86EE;
+  height: 5.5em;
+  display: flex;
+  align-items: center;
+}
+.title1 {
+  font-size: 3em;
+  color: white;
+  font-family: sans-serif;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Css for the Reading Component */
+.ReadingComponent {
+  margin: 2% 2%;
+}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.Reading1 {
+  font-size: 1.5em;
+  color: #00009C;
+}
+
+.Reading2 {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.Reading2 li{
+  text-align: left;
+  margin: 2em;
+}
+.bookTitle {
+  width: 8em;
+  font-size: 1em;
+}
+.bookAuthor {
+  width: 8em;
+  font-size: .8em;
+  color: #A0A0A0;
+}
+.bookImage {
+  height: 12em;
+  width: 8em;
+  background-repeat: no-repeat;
+}
+.searchBtn {
+  height: 6em;
+  width: 10em;
+}
+
+
+/* Search Component */
+.searchInput {
+  width:100%;
+  height: 4em;
+
+}
