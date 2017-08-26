@@ -17,11 +17,18 @@ class App extends Component {
       this.setState({books:books})
     })
   }
-  updateShelf = (book, shelf)=>{BooksAPI.update(book,shelf).then((books)=>{
-    this.setState({books:books})
-  })
-}
+
+updateShelf = (book, shelf) => {
+    BooksAPI.udpate(book, shelf).then(response => {
+      book.shelf = shelf
+      this.setState({ books: this.state.books.filter(b => b.id !== book.id).concat([ book ]) })
+    })
+  }
+
+
+
   render() {
+
     return (
       <div className="App">
           <div className="title">
